@@ -41,7 +41,7 @@ export class CoursesService {
     const index = this.courses.findIndex((course) => course.id === id);
 
     if (index >= 0) {
-      this.courses.slice(index, 1);
+      this.courses.splice(index, 1);
     }
   }
 }
